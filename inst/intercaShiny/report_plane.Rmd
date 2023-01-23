@@ -1,0 +1,33 @@
+---
+title: "report"
+author: "interca"
+date: "`r Sys.Date()`"
+output: html_document
+params:
+  plane: NA
+  plane_table: NA
+---
+
+InterCA dynamic report
+
+Please find below an automatic report that has been produced according to your selections. 
+
+
+According to your selections the following plane is produced
+
+```{r echo=FALSE}
+library(pander)
+params$plane
+```
+
+According to your selection the following table is produced
+```{r echo=FALSE, render=pander::pander}
+library(pander)
+first<-params$plane_table[1]
+second<-params$plane_table[2]
+combined=data.frame(xaxis=first,yaxis=second)
+colnames(combined)=c("x_axis interpretive coordinates","y_axis interpretive coordinates")
+combined
+```
+
+

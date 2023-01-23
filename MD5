@@ -1,0 +1,15 @@
+79bb668e4e822e04ae29a55940abf65f *DESCRIPTION
+1f3659d94c6563bad9928c2cf57b31ea *NAMESPACE
+b04518390d20da0fcc5f27e1b072d0d6 *R/interca.R
+a220dc97d4bf73f49fe496b4b1f18b0d *R/intercaShiny.R
+2403fc4745836f28afd84d8aeb9368f9 *R/plot1d.R
+c9f4d1af2b978c1616b6208d7ca07de5 *R/plot2d.R
+54be986174d3f85fe18912bf2033c35a *README.md
+f86e1abb8ad5959b8bfd7050512d0d3d *inst/intercaShiny/report.Rmd
+ab7fbdf553b9ab1ccfcaebbf1a0e1b67 *inst/intercaShiny/report_plane.Rmd
+4757c4c19dbd8d871cc0f34a1bae7838 *inst/intercaShiny/server.R
+9ea1d8c07742670122521e1edae5ab22 *inst/intercaShiny/ui.R
+f3a4f9e804020990f1990a3679579a94 *man/interca.Rd
+24a1751affb1a505f0ecf9051d79d76c *man/intercaShiny.Rd
+11cd118d8f57c084429582a253d8d1c5 *man/plot1d.Rd
+e300756940694359ede287bcc97e232a *man/plot2d.Rd

@@ -1,0 +1,40 @@
+---
+title: "report"
+author: "interca"
+date: "`r Sys.Date()`"
+output: html_document
+params:
+  axis: NA
+  axis_table: NA
+---
+
+InterCA dynamic report
+
+Please find below an automatic report that has been produced according to your selections. 
+According to your selections the following axis is produced
+
+```{r echo=FALSE}
+library(pander)
+params$axis
+```
+
+According to your selection the following table is produced
+```{r echo=FALSE, render=pander::pander}
+library(pander)
+params$axis_table[1]->df
+df=data.frame(df)
+colnames(df)=c("Interpretive coordinates")
+df
+```
+
+Acoording to your selection the most contributing (important) points of your axis are:
+```{r echo=FALSE}
+library(tidyverse)
+params$axis_table->df
+df%>%filter(df>0)->right
+df%>%filter(df<0)->left
+cat(paste("Most contributing points on the left side of axis are:","\n"))
+        cat(paste(rownames(left)))
+cat(paste("Most contributing points on the right side of axis are:","\n"))
+        cat(paste(rownames(right)))
+```
